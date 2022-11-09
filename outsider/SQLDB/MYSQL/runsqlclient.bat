@@ -1,0 +1,1 @@
+" C:\Program Files\MariaDB 10.6\bin\mysql.exe" "--defaults-file=C:\Program Files\MariaDB 10.6\data\my.ini" -uroot -p

@@ -1,0 +1,21 @@
+os:
+  selectos: "windows"
+  ip: "localhost"
+  subnet: 24
+  gateway: "192.168.0.1"
+  dhcp: true
+
+app:
+  uiport: 4041
+  UTC: "Asia/Hong_Kong"
+  NTP: "192.168.0.1"
+
+db:
+  selecteddb: "mysql"
+  dbac: "admin"
+  dbpw: "IWantToDie"
+  dbip: "localhost"
+  dbport: 2043
+
+log:
+  level: "debug"

@@ -1,0 +1,22 @@
+Table os.settings{
+    ipv4 int(unsigned) [no null]//default:3232235601
+    port int(3) [no null,default:4041]
+    os varchar(10)[no null, default:"windows"]
+}
+
+Table Device.settings as D{
+    id int(4)[pk, unique]
+    os varchar(10)[no null,default:"Unix"]
+    ip int(unsigned) [no null]
+    port int(3) [no null,default:4045]
+    servicetype varchar(10)[no null,default:"mysql"]
+    sqlac varchar(32)[no null,default:"./administrator"]
+    sqlpw varchar(32)[no null,default:"P@ssw0rd"]
+}
+
+Table Device.Data{
+    id int(unsigned)[pk,increment]
+    Deviceid int [ref: > D.id]
+    description varchar(unsigned)
+    actiontime datetime
+}

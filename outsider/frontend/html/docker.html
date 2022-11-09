@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>docker</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="/UI/CSS/docker.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>Platform</div>
+    <div>{{.os}}</div>
+    <button class="genid"></button>
+    <input type="getkey" accept=".bin">
+    <div>DHCP</div>
+    <select value={{.DHCP}}>
+        <option value="disable">disable</option>
+        <option value="enable">enable</option>
+    </select>
+    <div>ipadress</div>
+    <input type="text" value={{.ip}}>
+    <div>subnet</div>
+    <select value={{.subnet}}>
+        <option value=8>255.0.0.0</option>
+        <option value=16>255.255.0.0</option>
+        <option value=24>255.255.255.0</option>
+    </select>
+    <div>gateway</div>
+    <input type="text" value={{.gateway}}>
+    <button class="IPSave">Save</button>
+    <div>sqltype</div>
+    <select value={{.sqltype}}>
+        <option value="mariadb">mariadb</option>
+        <option value="mysql">mysql</option>
+        <option value="postgresql">postgresql</option>
+    </select>
+    <div>sqlport</div>
+    <input type="text" value={{.sqlport}}>
+    <button class="SQLSave">Save</button>
+    <button class="createDB">create DB</button>
+    <button class="reboot">Reboot</button>
+</body>
+
+</html>

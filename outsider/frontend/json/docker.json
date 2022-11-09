@@ -1,0 +1,14 @@
+{
+    "os": "windows",
+    "ip": "localhost",
+    "subnet": "24",
+    "gateway": "192.168.0.1",
+    "DHCP": "disable",
+    "uiport": "4041",
+    "sqltype": "mysql",
+    "sqlport": "3306",
+    "sqlacc": "root",
+    "sqlpw": "P@ssw0rd",
+    "dbexit": "true",
+    "UTC": "Asia/Hong_Kong"
+}
